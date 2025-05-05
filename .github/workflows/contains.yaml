@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: check environment variable
-        if: ${{'\n' == '\n'}}
+        if: ${{'It''s a ''quoted'' string' == "It's a 'quoted' string"}}
         run: echo "env.1abc is invalid"
         continue-on-error: true
