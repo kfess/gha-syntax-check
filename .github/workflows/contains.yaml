@@ -1,0 +1,14 @@
+name: Test Validation
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  validate_1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check string concatenation
+        if: contains('a'+'a', 'a')
+        run: echo "String concatenation works"
