@@ -9,12 +9,7 @@ jobs:
   validate_1:
     runs-on: ubuntu-latest
     steps:
-      - name: valid nested index access
-        if: ${{'aaaa'}}${{'aaaa'}} == 'aaaaaaaa'
-        run: echo "nested index works"
-        continue-on-error: true
-
       - name: check environment variable
-        if: 'a' == 'a'
+        if: 999999999999999999999999999999 == 1e30
         run: echo "env.1abc is invalid"
         continue-on-error: true
