@@ -15,6 +15,6 @@ jobs:
         continue-on-error: true
 
       - name: check environment variable
-        if: 'abc''def' == 'abcdef'
+        if: 'a' == 'a'
         run: echo "env.1abc is invalid"
         continue-on-error: true
