@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: check environment variable
-        if: 999999999999999999999999999999 == 1e30
+        if: true /* this looks like a comment */ && true
         run: echo "env.1abc is invalid"
         continue-on-error: true
