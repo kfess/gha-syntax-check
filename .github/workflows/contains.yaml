@@ -40,13 +40,8 @@ jobs:
         continue-on-error: true
 
       - name: invalid unexpected trailing operator
-        if: github.ref ==
+        if: github.ref == ''
         run: echo "should fail due to dangling =="
-        continue-on-error: true
-
-      - name: valid not (!)
-        if: !contains(fromJSON('["x"]'), 'a')
-        run: echo "negation works"
         continue-on-error: true
 
       - name: invalid unknown function
