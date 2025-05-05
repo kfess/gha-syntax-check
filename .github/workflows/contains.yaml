@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: check environment variable
-        if: true /* this looks like a comment */ && true
+        if: ${{'\n' == '\n'}}
         run: echo "env.1abc is invalid"
         continue-on-error: true
