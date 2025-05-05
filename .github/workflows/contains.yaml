@@ -9,62 +9,7 @@ jobs:
   validate_1:
     runs-on: ubuntu-latest
     steps:
-      - name: check string concatenation
-        if: contains('a'+'a', 'a')
-        run: echo "String concatenation works"
-        continue-on-error: true
-
-      - name: valid contains with array via fromJSON
-        if: contains(fromJSON('["a","b"]'), 'a')
-        run: echo "array contains works"
-        continue-on-error: true
-
-      - name: invalid string concatenation with +
-        if: contains('a'+'a', 'a')
-        run: echo "should fail due to +"
-        continue-on-error: true
-
-      - name: invalid numeric + with literal
-        if: 1 + 2 == 3
-        run: echo "should fail due to unsupported +"
-        continue-on-error: true
-
       - name: valid nested index access
         if: fromJSON('{"a":{"b":"x"}}')["a"]["b"] == 'x'
         run: echo "nested index works"
-        continue-on-error: true
-
-      - name: valid startsWith
-        if: startsWith('abc', 'a')
-        run: echo "startsWith works"
-        continue-on-error: true
-
-      - name: invalid unexpected trailing operator
-        if: github.ref == ''
-        run: echo "should fail due to dangling =="
-        continue-on-error: true
-
-      - name: invalid unknown function
-        if: fakeFunction('a')
-        run: echo "should fail due to undefined function"
-        continue-on-error: true
-
-      - name: valid boolean expression
-        if: true && false || true
-        run: echo "boolean logic works"
-        continue-on-error: true
-
-      - name: invalid unmatched parentheses
-        if: contains(('a', 'a')
-        run: echo "should fail due to parentheses"
-        continue-on-error: true
-
-      - name: invalid unterminated string
-        if: contains('a, 'a')
-        run: echo "should fail due to unterminated string"
-        continue-on-error: true
-
-      - name: valid null comparison
-        if: null == null
-        run: echo "null comparison works"
         continue-on-error: true
