@@ -9,7 +9,7 @@ env:
   startsWith: "my value"
   # 1: "a"
   # null: a
-  true: b
+  true: "We can read this."
   # undefined: b
 
 jobs:
@@ -17,6 +17,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: check environment variable
-        if: ${{true}}
-        run: echo "env.1abc is invalid"
+        run: echo ${{ env.true}}
         continue-on-error: true
