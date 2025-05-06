@@ -19,5 +19,6 @@ jobs:
       - name: check environment variable
         run: |
           echo ${{ env.true}}
-          # examine the type of the variable
+          echo ${{ env.false}}
+          echo ${{ env.undefined}}
         continue-on-error: true
