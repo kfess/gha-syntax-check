@@ -41,11 +41,20 @@ jobs:
   #       run: |
   #         echo "Setting undefined as key seems to work"
 
-  "validation-yes-key":
+  # "validation-yes-key":
+  #   runs-on: ubuntu-latest
+  #   env:
+  #     yes: "test value"
+  #   steps:
+  #     - name: Check if yes key is valid or not
+  #       run: |
+  #         echo "Setting yes as key seems to work"
+
+  "validation-tilde-key":
     runs-on: ubuntu-latest
     env:
-      yes: "test value"
+      ~: "test value"
     steps:
-      - name: Check if yes key is valid or not
+      - name: Check if tilde key is valid or not
         run: |
-          echo "Setting yes as key seems to work"
+          echo "Setting tilde as key seems to work"
