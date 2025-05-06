@@ -8,8 +8,9 @@ on:
 env:
   # 1: "a"
   # null: a
-  true: "We can read this."
-  # undefined: b
+  true: "We can read this true"
+  false: "We can read this false"
+  undefined: "We can read this undefined"
 
 jobs:
   "a":
