@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: check environment variable
-        if: 1e10
+        if:  !! inputs.valid
         run: echo "env.1abc is invalid"
         continue-on-error: true
