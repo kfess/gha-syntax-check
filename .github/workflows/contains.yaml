@@ -9,7 +9,8 @@ env:
   startsWith: "my value"
   # 1: "a"
   # null: a
-  undefined: b
+  true: b
+  # undefined: b
 
 jobs:
   "a":
