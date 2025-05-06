@@ -9,11 +9,10 @@ env:
   startsWith: "my value"
 
 jobs:
-  validate_1:
+  1:
     runs-on: ubuntu-latest
     steps:
       - name: check environment variable
-        if: ${{ fromJSON('{ "path": "C:\\\\Users\\\\user" }').path }}
-
+        if: ${{true}}
         run: echo "env.1abc is invalid"
         continue-on-error: true
