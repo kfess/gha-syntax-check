@@ -5,17 +5,14 @@ on:
     branches:
       - main
 
+env:
+  MY_ENV_VAR: "abc"
+
 jobs:
   validate_1:
     runs-on: ubuntu-latest
     steps:
       - name: check environment variable
-        if: ${{
-          github
-            .event
-            .pull_request
-            .head
-            .ref
-        }}
+        if: ${{ env.MY_ENV_VAR$ }}
         run: echo "env.1abc is invalid"
         continue-on-error: true
