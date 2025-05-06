@@ -9,7 +9,7 @@ env:
   startsWith: "my value"
 
 jobs:
-  1:
+  _:
     runs-on: ubuntu-latest
     steps:
       - name: check environment variable
