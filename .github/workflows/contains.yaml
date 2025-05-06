@@ -6,7 +6,6 @@ on:
       - main
 
 env:
-  startsWith: "my value"
   # 1: "a"
   # null: a
   true: "We can read this."
@@ -17,5 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: check environment variable
-        run: echo ${{ env.true}}
+        run: |
+          echo ${{ env.true}}
+          # examine the type of the variable
         continue-on-error: true
