@@ -6,13 +6,14 @@ on:
       - main
 
 env:
-  MY_ENV_VAR: "abc"
+  startsWith: "my value"
 
 jobs:
   validate_1:
     runs-on: ubuntu-latest
     steps:
       - name: check environment variable
-        if: ${{ env.MY_ENV_VAR$ }}
+        if: ${{ fromJSON('{ "path": "C:\\\\Users\\\\user" }').path }}
+
         run: echo "env.1abc is invalid"
         continue-on-error: true
