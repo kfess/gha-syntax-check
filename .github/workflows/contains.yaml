@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: check environment variable
-        if: ${{inputs.env == 'prod' && (github.ref == 'refs/heads/main' ? 'yes' : 'no')}}
+        if: ${{ 'foo\u200bbar' == 'foobar'}}
         run: echo "env.1abc is invalid"
         continue-on-error: true
