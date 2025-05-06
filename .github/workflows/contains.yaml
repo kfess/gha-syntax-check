@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: check environment variable
-        if: "this is not // a comment"
+        if: 'this is not // a comment'
         run: echo "env.1abc is invalid"
         continue-on-error: true
