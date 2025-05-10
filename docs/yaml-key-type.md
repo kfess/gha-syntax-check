@@ -19,12 +19,12 @@ To validate the consistency between actual runtime error messages and VSCode ext
 |-----|----------|--------------|---------------------|----------------------|-------|
 | 1 | string | `"1": "value"` | `The identifier '1' is invalid. IDs may only contain alphanumeric characters, '_', and '-'. IDs must start with a letter or '_' and and must be less than 100 characters.` | `The identifier '1' is invalid. IDs may only contain alphanumeric characters, '_', and '-'. IDs must start with a letter or '_' and and must be less than 100 characters.` | ✅ |
 | 2 | number | `1: "value"` | `The identifier '1' is invalid. IDs may only contain alphanumeric characters, '_', and '-'. IDs must start with a letter or '_' and and must be less than 100 characters.` | `i.indexOf is not a function` | Error Message in VSCode Extension is not appropriate |
-| 3 | "null" | `"null": "value"` | ✅ No Error Message | ✅ No Error Message | ✅ |
+| 3 | "null" | `"null": "value"` | ✅ | ✅ | ✅ |
 | 4 | null | `null: "value"` | `Unexpected value ''` | `Unexpected value 'null'` | Error Message in VSCode Extension is not appropriate |
-| 5 | boolean | `true: "value"` | `` | `i.indexOf is not a function` | |
-| 6 | "true" | `"true": "value"` | `` | ✅ No Error Message | |
-| 7 | boolean | `false: "value"` | `` | `Unexpected value 'false', The identifier 'false' is invalid. IDs may only contain alphanumeric characters, '_', and '-'. IDs must start with a letter or '_' and and must be less than 100 characters.` | |
-| 8 | "false" | `"false": "value"` | `` | ✅ No Error Message | |
+| 5 | true | `true: "value"` | ✅ | `i.indexOf is not a function` | |
+| 6 | "true" | `"true": "value"` | ✅ | ✅ | |
+| 7 | false | `false: "value"` | ✅ | `Unexpected value 'false', The identifier 'false' is invalid. IDs may only contain alphanumeric characters, '_', and '-'. IDs must start with a letter or '_' and and must be less than 100 characters.` | |
+| 8 | "false" | `"false": "value"` | ✅ | ✅ | |
 
 ## 3. Detailed Analysis
 

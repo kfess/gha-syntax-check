@@ -1,0 +1,12 @@
+name: undefined Validation
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  undefined:
+    name: Key is undefined
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Key is undefined'
