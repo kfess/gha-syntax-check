@@ -1,4 +1,4 @@
-name: Number Key Validation
+name: String null Validation
 
 on:
   push:
