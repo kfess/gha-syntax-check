@@ -1,0 +1,428 @@
+name: Complete Runner Validation
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  # Ubuntu x64 Runners
+  "ubuntu-16-04":
+    name: Ubuntu 16.04
+    runs-on: ubuntu-16.04
+    timeout-minutes: 1
+    steps:
+      - run: |
+          echo "✅ If you see this, the job is running on Ubuntu 16.04"
+          echo "OS Version: $(lsb_release -d | cut -f2)"
+        shell: bash
+    continue-on-error: true
+
+  "ubuntu-18-04":
+    name: Ubuntu 18.04
+    runs-on: ubuntu-18.04
+    timeout-minutes: 1
+    steps:
+      - run: |
+          echo "✅ If you see this, the job is running on Ubuntu 18.04"
+          echo "OS Version: $(lsb_release -d | cut -f2)"
+        shell: bash
+    continue-on-error: true
+
+  "ubuntu-20-04":
+    name: Ubuntu 20.04
+    runs-on: ubuntu-20.04
+    timeout-minutes: 1
+    steps:
+      - run: |
+          echo "✅ If you see this, the job is running on Ubuntu 20.04"
+          echo "OS Version: $(lsb_release -d | cut -f2)"
+        shell: bash
+    continue-on-error: true
+
+  "ubuntu-22-04":
+    name: Ubuntu 22.04
+    runs-on: ubuntu-22.04
+    timeout-minutes: 1
+    steps:
+      - run: |
+          echo "✅ If you see this, the job is running on Ubuntu 22.04"
+          echo "OS Version: $(lsb_release -d | cut -f2)"
+        shell: bash
+    continue-on-error: true
+
+  "ubuntu-24-04":
+    name: Ubuntu 24.04
+    runs-on: ubuntu-24.04
+    timeout-minutes: 1
+    steps:
+      - run: |
+          echo "✅ If you see this, the job is running on Ubuntu 24.04"
+          echo "OS Version: $(lsb_release -d | cut -f2)"
+        shell: bash
+    continue-on-error: true
+
+  "ubuntu-latest":
+    name: Ubuntu Latest
+    runs-on: ubuntu-latest
+    timeout-minutes: 1
+    steps:
+      - run: |
+          echo "✅ If you see this, the job is running on Ubuntu Latest"
+          echo "OS Version: $(lsb_release -d | cut -f2)"
+        shell: bash
+    continue-on-error: true
+
+  # Ubuntu ARM64 Runners
+  "ubuntu-16-04-arm":
+    name: Ubuntu 16.04 ARM
+    runs-on: ubuntu-16.04-arm
+    timeout-minutes: 1
+    steps:
+      - run: |
+          echo "✅ If you see this, the job is running on Ubuntu 16.04 ARM"
+          echo "Architecture: $(uname -m)"
+          echo "OS Version: $(lsb_release -d | cut -f2)"
+        shell: bash
+    continue-on-error: true
+
+  "ubuntu-18-04-arm":
+    name: Ubuntu 18.04 ARM
+    runs-on: ubuntu-18.04-arm
+    timeout-minutes: 1
+    steps:
+      - run: |
+          echo "✅ If you see this, the job is running on Ubuntu 18.04 ARM"
+          echo "Architecture: $(uname -m)"
+          echo "OS Version: $(lsb_release -d | cut -f2)"
+        shell: bash
+    continue-on-error: true
+
+  "ubuntu-20-04-arm":
+    name: Ubuntu 20.04 ARM
+    runs-on: ubuntu-20.04-arm
+    timeout-minutes: 1
+    steps:
+      - run: |
+          echo "✅ If you see this, the job is running on Ubuntu 20.04 ARM"
+          echo "Architecture: $(uname -m)"
+          echo "OS Version: $(lsb_release -d | cut -f2)"
+        shell: bash
+    continue-on-error: true
+
+  "ubuntu-22-04-arm":
+    name: Ubuntu 22.04 ARM
+    runs-on: ubuntu-22.04-arm
+    timeout-minutes: 1
+    steps:
+      - run: |
+          echo "✅ If you see this, the job is running on Ubuntu 22.04 ARM"
+          echo "Architecture: $(uname -m)"
+          echo "OS Version: $(lsb_release -d | cut -f2)"
+        shell: bash
+    continue-on-error: true
+
+  "ubuntu-24-04-arm":
+    name: Ubuntu 24.04 ARM
+    runs-on: ubuntu-24.04-arm
+    timeout-minutes: 1
+    steps:
+      - run: |
+          echo "✅ If you see this, the job is running on Ubuntu 24.04 ARM"
+          echo "Architecture: $(uname -m)"
+          echo "OS Version: $(lsb_release -d | cut -f2)"
+        shell: bash
+    continue-on-error: true
+
+  # Windows x64 Runners
+  "windows-2019":
+    name: Windows 2019
+    runs-on: windows-2019
+    timeout-minutes: 1
+    steps:
+      - run: |
+          Write-Host "✅ If you see this, the job is running on Windows 2019"
+          Write-Host "OS Version: $([System.Environment]::OSVersion.Version)"
+        shell: powershell
+    continue-on-error: true
+
+  "windows-2022":
+    name: Windows 2022
+    runs-on: windows-2022
+    timeout-minutes: 1
+    steps:
+      - run: |
+          Write-Host "✅ If you see this, the job is running on Windows 2022"
+          Write-Host "OS Version: $([System.Environment]::OSVersion.Version)"
+        shell: powershell
+    continue-on-error: true
+
+  "windows-2023":
+    name: Windows 2023
+    runs-on: windows-2023
+    timeout-minutes: 1
+    steps:
+      - run: |
+          Write-Host "✅ If you see this, the job is running on Windows 2023"
+          Write-Host "OS Version: $([System.Environment]::OSVersion.Version)"
+        shell: powershell
+    continue-on-error: true
+
+  "windows-2024":
+    name: Windows 2024
+    runs-on: windows-2024
+    timeout-minutes: 1
+    steps:
+      - run: |
+          Write-Host "✅ If you see this, the job is running on Windows 2024"
+          Write-Host "OS Version: $([System.Environment]::OSVersion.Version)"
+        shell: powershell
+    continue-on-error: true
+
+  "windows-2025":
+    name: Windows 2025
+    runs-on: windows-2025
+    timeout-minutes: 1
+    steps:
+      - run: |
+          Write-Host "✅ If you see this, the job is running on Windows 2025"
+          Write-Host "OS Version: $([System.Environment]::OSVersion.Version)"
+        shell: powershell
+    continue-on-error: true
+
+  "windows-latest":
+    name: Windows Latest
+    runs-on: windows-latest
+    timeout-minutes: 1
+    steps:
+      - run: |
+          Write-Host "✅ If you see this, the job is running on Windows Latest"
+          Write-Host "OS Version: $([System.Environment]::OSVersion.Version)"
+        shell: powershell
+    continue-on-error: true
+
+  # Windows ARM Runners
+  "windows-11-arm":
+    name: Windows 11 Arm
+    runs-on: windows-11-arm
+    timeout-minutes: 1
+    steps:
+      - run: |
+          Write-Host "Testing Windows 11 Arm"
+          Write-Host "OS Version: $([System.Environment]::OSVersion.Version)"
+          Write-Host "Architecture: $(Get-WmiObject Win32_Processor | Select-Object -ExpandProperty Architecture)"
+        shell: powershell
+    continue-on-error: true
+
+  # macOS Intel Runners
+  "macos-10-15":
+    name: macOS 10.15
+    runs-on: macos-10.15
+    timeout-minutes: 1
+    steps:
+      - run: |
+          echo "✅ If you see this, the job is running on macOS 10.15"
+          echo "OS Version: $(sw_vers -productVersion)"
+        shell: bash
+    continue-on-error: true
+
+  "macos-11":
+    name: macOS 11
+    runs-on: macos-11
+    timeout-minutes: 1
+    steps:
+      - run: |
+          echo "✅ If you see this, the job is running on macOS 11"
+          echo "OS Version: $(sw_vers -productVersion)"
+        shell: bash
+    continue-on-error: true
+
+  "macos-12":
+    name: macOS 12
+    runs-on: macos-12
+    timeout-minutes: 1
+    steps:
+      - run: |
+          echo "✅ If you see this, the job is running on macOS 12"
+          echo "OS Version: $(sw_vers -productVersion)"
+        shell: bash
+    continue-on-error: true
+
+  "macos-13":
+    name: macOS 13
+    runs-on: macos-13
+    timeout-minutes: 1
+    steps:
+      - run: |
+          echo "✅ If you see this, the job is running on macOS 13"
+          echo "OS Version: $(sw_vers -productVersion)"
+        shell: bash
+    continue-on-error: true
+
+  "macos-13-large":
+    name: macOS 13 Large
+    runs-on: macos-13-large
+    timeout-minutes: 1
+    steps:
+      - run: |
+          echo "✅ If you see this, the job is running on macOS 13 Large"
+          echo "OS Version: $(sw_vers -productVersion)"
+          echo "Architecture: $(uname -m)"
+        shell: bash
+    continue-on-error: true
+
+  # macOS ARM64 Runners
+  "macos-13-xlarge":
+    name: macOS 13 XLarge (ARM64)
+    runs-on: macos-13-xlarge
+    timeout-minutes: 1
+    steps:
+      - run: |
+          echo "✅ If you see this, the job is running on macOS 13 XLarge"
+          echo "OS Version: $(sw_vers -productVersion)"
+          echo "Architecture: $(uname -m)"
+        shell: bash
+    continue-on-error: true
+
+  "macos-13-arm64":
+    name: macOS 13 Arm64
+    runs-on: macos-13-arm64
+    timeout-minutes: 1
+    steps:
+      - run: |
+          echo "Testing macOS 13 Arm64"
+          echo "OS Version: $(sw_vers -productVersion)"
+          echo "Architecture: $(uname -m)"
+        shell: bash
+    continue-on-error: true
+
+  "macos-14":
+    name: macOS 14
+    runs-on: macos-14
+    timeout-minutes: 1
+    steps:
+      - run: |
+          echo "✅ If you see this, the job is running on macOS 14"
+          echo "OS Version: $(sw_vers -productVersion)"
+          echo "Architecture: $(uname -m)"
+        shell: bash
+    continue-on-error: true
+
+  "macos-14-large":
+    name: macOS 14 Large
+    runs-on: macos-14-large
+    timeout-minutes: 1
+    steps:
+      - run: |
+          echo "✅ If you see this, the job is running on macOS 14 Large"
+          echo "OS Version: $(sw_vers -productVersion)"
+          echo "Architecture: $(uname -m)"
+        shell: bash
+    continue-on-error: true
+
+  "macos-14-xlarge":
+    name: macOS 14 XLarge
+    runs-on: macos-14-xlarge
+    timeout-minutes: 1
+    steps:
+      - run: |
+          echo "✅ If you see this, the job is running on macOS 14 XLarge"
+          echo "OS Version: $(sw_vers -productVersion)"
+          echo "Architecture: $(uname -m)"
+        shell: bash
+    continue-on-error: true
+
+  "macos-14-arm64":
+    name: macOS 14 Arm64
+    runs-on: macos-14-arm64
+    timeout-minutes: 1
+    steps:
+      - run: |
+          echo "Testing macOS 14 Arm64"
+          echo "OS Version: $(sw_vers -productVersion)"
+          echo "Architecture: $(uname -m)"
+        shell: bash
+    continue-on-error: true
+
+  "macos-15":
+    name: macOS 15
+    runs-on: macos-15
+    timeout-minutes: 1
+    steps:
+      - run: |
+          echo "✅ If you see this, the job is running on macOS 15"
+          echo "OS Version: $(sw_vers -productVersion)"
+          echo "Architecture: $(uname -m)"
+        shell: bash
+    continue-on-error: true
+
+  "macos-15-large":
+    name: macOS 15 Large
+    runs-on: macos-15-large
+    timeout-minutes: 1
+    steps:
+      - run: |
+          echo "✅ If you see this, the job is running on macOS 15 Large"
+          echo "OS Version: $(sw_vers -productVersion)"
+          echo "Architecture: $(uname -m)"
+        shell: bash
+    continue-on-error: true
+
+  "macos-15-xlarge":
+    name: macOS 15 XLarge
+    runs-on: macos-15-xlarge
+    timeout-minutes: 1
+    steps:
+      - run: |
+          echo "✅ If you see this, the job is running on macOS 15 XLarge"
+          echo "OS Version: $(sw_vers -productVersion)"
+          echo "Architecture: $(uname -m)"
+        shell: bash
+    continue-on-error: true
+
+  "macos-15-arm64":
+    name: macOS 15 Arm64
+    runs-on: macos-15-arm64
+    timeout-minutes: 1
+    steps:
+      - run: |
+          echo "Testing macOS 15 Arm64"
+          echo "OS Version: $(sw_vers -productVersion)"
+          echo "Architecture: $(uname -m)"
+        shell: bash
+    continue-on-error: true
+
+  "macos-latest":
+    name: macOS Latest
+    runs-on: macos-latest
+    timeout-minutes: 1
+    steps:
+      - run: |
+          echo "✅ If you see this, the job is running on macOS Latest"
+          echo "OS Version: $(sw_vers -productVersion)"
+          echo "Architecture: $(uname -m)"
+        shell: bash
+    continue-on-error: true
+
+  "macos-latest-large":
+    name: macOS Latest Large
+    runs-on: macos-latest-large
+    timeout-minutes: 1
+    steps:
+      - run: |
+          echo "✅ If you see this, the job is running on macOS Latest Large"
+          echo "OS Version: $(sw_vers -productVersion)"
+          echo "Architecture: $(uname -m)"
+        shell: bash
+    continue-on-error: true
+
+  "macos-latest-xlarge":
+    name: macOS Latest XLarge
+    runs-on: macos-latest-xlarge
+    timeout-minutes: 1
+    steps:
+      - run: |
+          echo "✅ If you see this, the job is running on macOS Latest XLarge"
+          echo "OS Version: $(sw_vers -productVersion)"
+          echo "Architecture: $(uname -m)"
+        shell: bash
+    continue-on-error: true
