@@ -26,6 +26,7 @@ To validate the consistency between actual runtime error messages and VSCode ext
 | 7 | false | `false: "value"` | ✅ | `Unexpected value 'false', The identifier 'false' is invalid. IDs may only contain alphanumeric characters, '_', and '-'. IDs must start with a letter or '_' and and must be less than 100 characters.` | |
 | 8 | "false" | `"false": "value"` | ✅ | ✅ | ✅ |
 | 9 | undefined | `undefined: "value"` | ✅ | ✅ | ✅ |
+| 10 | ~ | `~: "value"` |  | `Unexpected value 'null', The identifier 'null' is invalid. IDs may only contain alphanumeric characters, '_', and '-'. IDs must start with a letter or '_' and and must be less than 100 characters.` |  |
 
 ## 3. Detailed Analysis
 
