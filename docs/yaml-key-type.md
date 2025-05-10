@@ -22,9 +22,10 @@ To validate the consistency between actual runtime error messages and VSCode ext
 | 3 | "null" | `"null": "value"` | ✅ | ✅ | ✅ |
 | 4 | null | `null: "value"` | `Unexpected value ''` | `Unexpected value 'null'` | Error Message in VSCode Extension is not appropriate |
 | 5 | true | `true: "value"` | ✅ | `i.indexOf is not a function` | |
-| 6 | "true" | `"true": "value"` | ✅ | ✅ | |
+| 6 | "true" | `"true": "value"` | ✅ | ✅ | ✅ |
 | 7 | false | `false: "value"` | ✅ | `Unexpected value 'false', The identifier 'false' is invalid. IDs may only contain alphanumeric characters, '_', and '-'. IDs must start with a letter or '_' and and must be less than 100 characters.` | |
-| 8 | "false" | `"false": "value"` | ✅ | ✅ | |
+| 8 | "false" | `"false": "value"` | ✅ | ✅ | ✅ |
+| 9 | undefined | `undefined: "value"` | ✅ | ✅ | ✅ |
 
 ## 3. Detailed Analysis
 

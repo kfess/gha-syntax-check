@@ -1,0 +1,12 @@
+name: NaN Key Validation
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  NaN:
+    name: Key is NaN
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Key is NaN'
