@@ -1,0 +1,12 @@
+name: Number Key Validation
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  1:
+    name: Key is "1"
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Key is "1"'
