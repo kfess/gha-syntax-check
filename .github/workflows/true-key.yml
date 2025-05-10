@@ -1,0 +1,12 @@
+name: true Key Validation
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  true:
+    name: Key is true
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Key is true'

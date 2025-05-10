@@ -1,0 +1,12 @@
+name: String false Key Validation
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  "false":
+    name: Key is "false"
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Key is "false"'
