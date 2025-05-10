@@ -1,0 +1,12 @@
+name: Number Zero Key Validation
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  0:
+    name: Key is 0
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Key is 0'

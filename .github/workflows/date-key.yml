@@ -1,0 +1,12 @@
+name: Date Validation
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  {}:
+    name: Key is ~
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Key is ~'
