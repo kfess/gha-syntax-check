@@ -5,8 +5,8 @@ on:
     branches: [main]
 
 jobs:
-  1:
-    name: Key is 1
+  null:
+    name: Key is null
     runs-on: ubuntu-latest
     steps:
-      - run: echo 'Key is 1'
+      - run: echo 'Key is null'

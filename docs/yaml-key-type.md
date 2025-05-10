@@ -17,7 +17,8 @@ To validate the consistency between actual runtime error messages and VSCode ext
 
 | No. | Key Type | YAML Example | Actual Runtime Error | VSCode Extension Error | Notes |
 |-----|----------|--------------|---------------------|----------------------|-------|
-| 1 | string | `"1": "value"` | `i.indexOf is not a function` | `The identifier '1' is invalid. IDs may only contain alphanumeric characters, '_', and '-'. IDs must start with a letter or '_' and and must be less than 100 characters.` | Error Message in VSCode Extension is not appropriate |
+| 1 | string | `"1": "value"` | `The identifier '1' is invalid. IDs may only contain alphanumeric characters, '_', and '-'. IDs must start with a letter or '_' and and must be less than 100 characters.` | `The identifier '1' is invalid. IDs may only contain alphanumeric characters, '_', and '-'. IDs must start with a letter or '_' and and must be less than 100 characters.` | OK |
+| 2 | number | `1: "value"` | `The identifier '1' is invalid. IDs may only contain alphanumeric characters, '_', and '-'. IDs must start with a letter or '_' and and must be less than 100 characters.` | `i.indexOf is not a function` | Error Message in VSCode Extension is not appropriate |
 
 ## 3. Detailed Analysis
 
