@@ -27,8 +27,7 @@ To validate the consistency between actual runtime error messages and VSCode ext
 | 8 | "false" | `"false": "value"` | ✅ | ✅ | ✅ |
 | 9 | undefined | `undefined: "value"` | ✅ | ✅ | ✅ |
 | 10 | ~ | `~: "value"` | `Unexpected value ''` | `Unexpected value 'null', The identifier 'null' is invalid. IDs may only contain alphanumeric characters, '_', and '-'. IDs must start with a letter or '_' and and must be less than 100 characters.` | |
-| 11 | [] | `[]: "value"` | `` | |
-| 12 | 0 | `0: "value"` | `Unexpected value '0', The identifier '0' is invalid. IDs may only contain alphanumeric characters, '_', and '-'. IDs must start with a letter or '_' and and must be less than 100 characters.` | Error Message in VSCode Extension is not appropriate |
+| 11 | 0 | `0: "value"` | `Unexpected value '0', The identifier '0' is invalid. IDs may only contain alphanumeric characters, '_', and '-'. IDs must start with a letter or '_' and and must be less than 100 characters.` | Error Message in VSCode Extension is not appropriate |
 
 ## 3. Hypothesis
 
